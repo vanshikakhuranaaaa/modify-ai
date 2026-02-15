@@ -1,3 +1,4 @@
+🔗 Live Demo: https://modify-ai.vercel.app
 🎧 MODIFY.AI
 Intelligent Emotion-Based Music Companion
 MODIFY.AI is an AI-inspired web application that detects user emotion via webcam interaction and recommends Spotify playlists aligned with the detected mood.
