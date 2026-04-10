@@ -1,6 +1,6 @@
 # 🎧 MODIFY.AI  
 
-🔗 **Live Demo:** https://modify-ai.vercel.app  
+🔗 **Live Demo:** https://modify-ai.vercel.app/
 
 ---
 
