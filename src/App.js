@@ -1,13 +1,19 @@
-import React from 'react';
-import './App.css';
+import React from "react";
 
-  function App() {
+function App() {
   return (
-    <div>
-      <h1>MODIFY.AI</h1>
-      <p>Content here</p>
+    <div style={{ width: "100%", height: "100%" }}>
+      <iframe
+        src="/index.html"
+        style={{
+          width: "100%",
+          height: "2000px",   // 👈 THIS FIXES SCROLL
+          border: "none"
+        }}
+        title="MODIFY.AI"
+      />
     </div>
   );
-  }
+}
 
 export default App;
