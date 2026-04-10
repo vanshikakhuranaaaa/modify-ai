@@ -28,8 +28,14 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--body);min-height:100vh;overflow-x:hidden}
-
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--body);
+  min-height:100vh;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
 /* NOISE OVERLAY */
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.6}
 
@@ -79,7 +85,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem
 
 /* MODEL CARDS GRID */
 .models-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:3rem}
-.model-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;transition:all .3s;position:relative;overflow:hidden;cursor:pointer}
+.model-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;transition:all .3s;position: absolute;overflow: visible;cursor:pointer}
 .model-card::before{content:'';position:absolute;inset:0;opacity:0;transition:.3s;border-radius:20px}
 .model-card:hover{border-color:var(--border2);transform:translateY(-4px)}
 .model-card:hover::before{opacity:1}
