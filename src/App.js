@@ -1,16 +1,13 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+  function App() {
   return (
-    <div dangerouslySetInnerHTML={{
-      __html: `<iframe 
-        src="/index.html" 
-        style="width:100%;height:100vh;border:none;display:block"
-        title="MODIFY.AI"
-      />`
-    }} />
+    <div>
+      <h1>MODIFY.AI</h1>
+      <p>Content here</p>
+    </div>
   );
-}
+  }
 
 export default App;
